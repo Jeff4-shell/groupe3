@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Groupe 3 - Machine Learning</title>
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 1.5em;
+        }
+
+        nav.navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #004b99;
+            padding: 1em;
+        }
+
+        nav.navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        nav.navbar a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            color: #004b99;
+            border-bottom: 2px solid #004b99;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 1.5em;
+        }
+
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        .code-snippet {
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1em;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        GROUPE 3
+    </header>
+    <nav class="navbar">
+        <a href="#">Accueil</a>
+        <a href="#machine-learning">Machine Learning</a>
+        <a href="#examples">Exemples</a>
+        <a href="kouenda.html">Menu 1</a>
+        <a href="jeff.html">Menu 2</a>
+    </nav>
+    <main>
+        <p>Bienvenue sur la page principale. Découvrez des informations sur le Machine Learning et ses applications passionnantes.</p>
+        
+        <section id="machine-learning">
+            <h2>Qu'est-ce que le Machine Learning ?</h2>
+            <p>
+                Le Machine Learning (apprentissage automatique) est un domaine de l'intelligence artificielle qui permet aux ordinateurs
+                d'apprendre à partir des données, sans être explicitement programmés. Il s'appuie sur des algorithmes et des modèles statistiques.
+            </p>
+            <h3>Applications principales</h3>
+            <ul>
+                <li>Vision par ordinateur (reconnaissance faciale, détection d'objets)</li>
+                <li>Traitement du langage naturel (traduction automatique, chatbots)</li>
+                <li>Prédictions et analyses (prévisions météorologiques, finance)</li>
+            </ul>
+            <h3>Algorithmes populaires</h3>
+            <ul>
+                <li>Régression Linéaire</li>
+                <li>Réseaux de Neurones</li>
+                <li>Machines à Vecteurs de Support (SVM)</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>Exemples et faits intéressants</h2>
+            <div class="code-snippet">
+                <p><strong>Exemple de code Python (Régression Linéaire) :</strong></p>
+                <pre>
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# Données d'exemple
+X = np.array([[1], [2], [3]])
+y = np.array([2, 4, 6])
+
+# Modèle de régression
+model = LinearRegression().fit(X, y)
+print(f"Prédiction pour X=4: {model.predict([[4]])}")
+                </pre>
+            </div>
+            <p>Fait intéressant : Les réseaux de neurones sont inspirés du fonctionnement du cerveau humain, bien qu'ils soient beaucoup plus simples en comparaison.</p>
+        </section>
+    </main>
+    <footer>
+        Copyright © 2024 Groupe 3
+    </footer>
+</body>
+</html>

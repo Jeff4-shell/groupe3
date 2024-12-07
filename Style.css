@@ -1,0 +1,55 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2980b9;
+    padding: 10px;
+    width: 200px;
+    float: left;
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #5dade2;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #1f618d;
+}
+
+/* Contenu principal */
+main {
+    margin-left: 210px; /* Laisser de la place pour la navbar */
+    padding: 20px;
+    background-color: #ecf0f1;
+    height: calc(100vh - 60px); /* Ajuste pour header et footer */
+}
+
+/* Footer */
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
